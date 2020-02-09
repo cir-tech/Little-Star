@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button botaoPratica = (Button) findViewById(R.id.idPratica);
-        Button botaoTeorica = (Button) findViewById(R.id.idTeorico);
+        Button botaoPratica =  findViewById(R.id.idPratica);
+        Button botaoTeorica =  findViewById(R.id.idTeorico);
 
         botaoPratica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         botaoTeorica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent changePage = new Intent(MainActivity.this,TeoricaActivity.class);
+                Intent changePage = new Intent(MainActivity.this,ListaExericiosTeorica.class);
                 startActivity(changePage);
             }
         });

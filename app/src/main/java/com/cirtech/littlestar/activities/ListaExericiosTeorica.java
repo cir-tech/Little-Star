@@ -2,15 +2,11 @@ package com.cirtech.littlestar.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.cirtech.littlestar.R;
 import com.cirtech.littlestar.adapters.CustomAdapterTest;
@@ -32,7 +28,26 @@ public class ListaExericiosTeorica extends AppCompatActivity {
         lst.setAdapter(adapter);
 //        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, fruitname);
 //        lst.setAdapter(adapter);
+        lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
 
+                // String value =(String)lv.getItemAtPosition(position);
+
+                if (position == 0) {
+                    Intent intent = new Intent(ListaExericiosTeorica.this, TeoricaActivity.class);
+                    startActivity(intent);
+                } //else if (position == 1) {
+//                    Intent intent = new Intent(this, List2.class);
+//                    startActivity(intent);
+//                } else if (position == 2) {
+//                    Intent intent = new Intent(this, List3.class);
+//                    startActivity(intent);
+//                }
+
+            }
+        });
     }
 }
 

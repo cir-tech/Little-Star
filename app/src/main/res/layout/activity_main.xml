@@ -8,26 +8,30 @@
     tools:context=".activities.MainActivity">
 
     <Button
-        android:id="@+id/idPratica"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Parte Prática"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/idTeorico"
-        android:layout_width="0dp"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
-        android:background="@android:color/holo_blue_light"
+        android:background="@drawable/button01"
         android:text="Parte Teórica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/idPratica"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button01"
+        android:text="Parte Prática"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
