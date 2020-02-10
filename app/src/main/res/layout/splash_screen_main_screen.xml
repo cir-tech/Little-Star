@@ -5,7 +5,7 @@
     android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EEE755"
+    android:background="#F5EE57"
     tools:context=".splashScreen.MainScreen">
 
     <ImageView
