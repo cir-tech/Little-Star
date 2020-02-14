@@ -64,15 +64,6 @@
         app:srcCompat="@drawable/face" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/estrelinhas" />
-
-    <ImageView
         android:id="@+id/imageView8"
         android:layout_width="384dp"
         android:layout_height="457dp"
@@ -95,13 +86,4 @@
         app:layout_constraintVertical_bias="0.616"
         app:srcCompat="@drawable/botao_senha" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="483dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/welcome"
-        tools:layout_editor_absoluteY="69dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
