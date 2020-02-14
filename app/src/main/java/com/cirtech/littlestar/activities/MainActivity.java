@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         botaoPratica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent changePage = new Intent(MainActivity.this,PraticaActivity.class);
+                Intent changePage = new Intent(MainActivity.this,ListaExericiosTeorica.class);
                 startActivity(changePage);
             }
         });
