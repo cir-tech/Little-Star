@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +27,10 @@ public class PraticaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pratica);
         txvResult = findViewById(R.id.idTxtResult);
+        ImageView cao = findViewById(R.id.idCaoPratica);
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.fadein);
+        cao.startAnimation(animation);
+
     }
 
     public void getSpeechInput(View view) {
