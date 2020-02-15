@@ -9,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.cirtech.littlestar.R;
+import com.cirtech.littlestar.activities.LoginActivity;
 import com.cirtech.littlestar.activities.MainActivity;
 
 public class MainScreen extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class MainScreen extends AppCompatActivity {
 
     private void mostrarMainActivity() {
         Intent intent = new Intent(
-                MainScreen.this, MainActivity.class
+                MainScreen.this, LoginActivity.class
         );
         startActivity(intent);
         finish();

@@ -10,12 +10,13 @@
 
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="300dp"
+        android:id="@+id/idLogin"
+        android:layout_width="403dp"
         android:layout_height="52dp"
         android:background="@drawable/botao_login"
         android:ems="10"
         android:inputType="textPersonName"
+        android:paddingLeft="85dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
@@ -24,17 +25,18 @@
         app:layout_constraintVertical_bias="0.315" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/idPassword"
         android:layout_width="403dp"
-        android:layout_height="48dp"
+        android:layout_height="52dp"
         android:background="@drawable/botao_senha"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="pzxzxxzxzarent"
+        android:paddingLeft="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/idBotaoLogar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLogin"
         app:layout_constraintVertical_bias="0.4" />
 
     <ImageView
@@ -81,7 +83,7 @@
         tools:layout_editor_absoluteY="137dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/idBotaoLogar"
         android:layout_width="129dp"
         android:layout_height="46dp"
         android:background="@drawable/entrar"
@@ -91,7 +93,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.616"
-        app:srcCompat="@drawable/botao_senha" />
+        app:srcCompat="@drawable/botao_senha"/>
 
     <ImageView
         android:id="@+id/imageView9"

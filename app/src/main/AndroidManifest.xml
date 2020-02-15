@@ -14,19 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.teste1111">
+        <activity android:name=".activities.LoginActivity"/>
+        <activity android:name=".activities.ListaExericiosTeorica"/>
+        <activity
+            android:name=".splashScreen.MainScreen"
+            android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-        <activity android:name=".activities.ListaExericiosTeorica"></activity>
-        <activity
-            android:name=".splashScreen.MainScreen"
-            android:theme="@style/AppTheme.Fullscreen">
-
         </activity>
         <activity android:name=".activities.TeoricaActivity" />
         <activity android:name=".activities.PraticaActivity" />
