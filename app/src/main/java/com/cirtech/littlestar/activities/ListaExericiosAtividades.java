@@ -13,7 +13,7 @@ import com.cirtech.littlestar.R;
 import com.cirtech.littlestar.adapters.CustomAdapterTest;
 
 
-public class ListaExericiosTeorica extends AppCompatActivity {
+public class ListaExericiosAtividades extends AppCompatActivity {
 
     String tipoAtividade;
     ListView lst;
@@ -49,11 +49,11 @@ public class ListaExericiosTeorica extends AppCompatActivity {
                 Intent intent;
                 if (position == 0) {
                     if(tipoAtividade.equals("atividadeTeorica")){
-                        intent = new Intent(ListaExericiosTeorica.this, TeoricaActivity.class);
+                        intent = new Intent(ListaExericiosAtividades.this, TeoricaActivity.class);
 //                        intent.putExtra("tipoAtividade","atividadeTeorica");
                     }
                     else {
-                        intent = new Intent(ListaExericiosTeorica.this, PraticaActivity.class);
+                        intent = new Intent(ListaExericiosAtividades.this, PraticaActivity.class);
 //                        intent.putExtra("tipoAtividade","atividadePratica");
                     }
                     startActivity(intent);

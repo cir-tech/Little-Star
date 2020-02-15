@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".activities.LoginActivity"/>
-        <activity android:name=".activities.ListaExericiosTeorica"/>
+        <activity android:name=".activities.ListaExericiosAtividades"/>
         <activity
             android:name=".splashScreen.MainScreen"
             android:theme="@style/AppTheme.Fullscreen">
