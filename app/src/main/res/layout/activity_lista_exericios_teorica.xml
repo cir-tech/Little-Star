@@ -5,13 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2F302F"
+    android:orientation="vertical"
     tools:context=".activities.ListaExericiosTeorica">
+
+    <TextView
+        android:id="@+id/idTituloTipoAtividade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0886D0"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:text="texto teste"
+        android:textSize="30dp"
+        app:fontFamily="casual" />
 
     <ListView
         android:id="@+id/listViewPraticaId"
         android:layout_width="391dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

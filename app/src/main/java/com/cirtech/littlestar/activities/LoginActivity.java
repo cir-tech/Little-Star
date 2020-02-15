@@ -60,6 +60,8 @@ public class LoginActivity extends AppCompatActivity {
         }else if(loginString.equals("desenv") && passwordString.equals("12345") ){
             Toast.makeText(LoginActivity.this,"Logado com sucesso!", Toast.LENGTH_SHORT).show();
             editor.putString("logado","logado");
+//            SharedPreferences.Editor remove (String key)
+//            SharedPreferences.Editor.clear()
             editor.commit();   //apply()
             redirecionar();
         }else {
