@@ -10,34 +10,34 @@
 
 
     <EditText
-        android:background="@drawable/botao_login"
-        android:id="@+id/editText"
-        android:layout_width="401dp"
+        android:id="@+id/idLogin"
+        android:layout_width="403dp"
         android:layout_height="52dp"
+        android:background="@drawable/botao_login"
         android:ems="10"
         android:inputType="textPersonName"
+        android:paddingLeft="85dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316"
-        />
+        app:layout_constraintVertical_bias="0.315" />
 
     <EditText
-        android:background="@drawable/botao_senha"
-        android:id="@+id/editText2"
+        android:id="@+id/idPassword"
         android:layout_width="403dp"
-        android:layout_height="48dp"
+        android:layout_height="52dp"
+        android:background="@drawable/botao_senha"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/idBotaoLogar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/idLogin"
+        app:layout_constraintVertical_bias="0.4" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -53,8 +53,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="57dp"
-        android:layout_height="51dp"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.775"
@@ -80,10 +80,10 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/little"
-        tools:layout_editor_absoluteY="50dp" />
+        tools:layout_editor_absoluteY="137dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/idBotaoLogar"
         android:layout_width="129dp"
         android:layout_height="46dp"
         android:background="@drawable/entrar"
@@ -93,15 +93,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.616"
-        app:srcCompat="@drawable/botao_senha" />
+        app:srcCompat="@drawable/botao_senha"/>
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="483dp"
+        android:layout_width="450dp"
         android:layout_height="87dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/welcome"
-        tools:layout_editor_absoluteY="69dp" />
+        tools:layout_editor_absoluteY="82dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
