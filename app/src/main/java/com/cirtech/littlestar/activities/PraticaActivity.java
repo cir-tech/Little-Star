@@ -27,6 +27,7 @@ public class PraticaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pratica);
         txvResult = findViewById(R.id.idTxtResult);
+
         ImageView cao = findViewById(R.id.idCaoPratica);
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.mixed_anim);
         cao.startAnimation(animation);
@@ -60,6 +61,9 @@ public class PraticaActivity extends AppCompatActivity {
 //                txvResult.setText(result.get(0));
 //                Log.d('minhaTag',"foi");
 //                Log.i("t","teste");
+                Intent intent = new intent();
+
+                if()put.extra("")
                 if( result.get(0).equals("dog")){
                     txvResult.setText("Parabéns, você acertou!");
                 } else  txvResult.setText("Você está no caminho certo, tente novamente!");
