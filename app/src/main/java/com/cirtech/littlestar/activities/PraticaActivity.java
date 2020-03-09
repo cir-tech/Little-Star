@@ -28,7 +28,7 @@ public class PraticaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pratica);
         txvResult = findViewById(R.id.idTxtResult);
         ImageView cao = findViewById(R.id.idCaoPratica);
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.fadein);
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.mixed_anim);
         cao.startAnimation(animation);
 
     }
