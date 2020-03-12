@@ -28,17 +28,8 @@ public class LoginActivity extends AppCompatActivity {
                 logarApp();
             }
         });
-        SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE,0);
-        if(sharedPreferences.contains("logado")){
-            String logado = sharedPreferences.getString("logado","nao logado");
-            if(logado.equals("logado")){
-                Toast.makeText(LoginActivity.this,"ja foi logado", Toast.LENGTH_SHORT).show();
-                redirecionar();
-            }
-        }
-        else{
-            Toast.makeText(LoginActivity.this,"ja nao foi logado", Toast.LENGTH_SHORT).show();
-        }
+        //verifica se ja logou
+        verificaIfLogou();
     }
 
 
@@ -76,5 +67,19 @@ public class LoginActivity extends AppCompatActivity {
                 LoginActivity.this, MainActivity.class
         );
         startActivity(intent);
+    }
+
+    private void redirecionaIfLogou(){
+        SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE,0);
+        if(sharedPreferences.contains("logado")){
+            String logado = sharedPreferences.getString("logado","nao logado");  //o segundo parametro é um default value
+            if(logado.equals("logado")){
+                Toast.makeText(LoginActivity.this,"ja foi logado", Toast.LENGTH_SHORT).show();
+                redirecionar();
+            }
+        }
+        else{
+            Toast.makeText(LoginActivity.this,"ja nao foi logado", Toast.LENGTH_SHORT).show();
+        }
     }
 }
