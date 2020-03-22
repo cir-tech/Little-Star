@@ -14,9 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.GridExerciciosAtividades">
-
-        </activity>
+        <activity android:name=".activities.ListaAtividadesActivity"></activity>
+        <activity android:name=".activities.GridExerciciosAtividades"></activity>
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.ListaExericiosAtividades" />
         <activity

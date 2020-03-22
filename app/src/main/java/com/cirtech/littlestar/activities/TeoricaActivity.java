@@ -21,7 +21,7 @@ public class TeoricaActivity extends Activity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teorica);
+        setContentView(R.layout.activity_teorical_animals);
 
         cao = (ImageView) findViewById(R.id.caoid);
         gato = (ImageView) findViewById(R.id.gatoid);
