@@ -129,4 +129,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/estrela2" />
 
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="82dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estrela1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
