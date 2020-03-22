@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import com.cirtech.littlestar.R;
 
 public class TeoricaActivity extends Activity implements View.OnClickListener{
+
     private ImageView cao;
     private ImageView gato;
     private ImageView leao;
@@ -18,14 +19,17 @@ public class TeoricaActivity extends Activity implements View.OnClickListener{
     private MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teorica);
+
         cao = (ImageView) findViewById(R.id.caoid);
         gato = (ImageView) findViewById(R.id.gatoid);
         leao = (ImageView) findViewById(R.id.leaoid);
         macaco = (ImageView) findViewById(R.id.macacoid);
         ovelha = (ImageView) findViewById(R.id.ovelhaid);
         vaca = (ImageView) findViewById(R.id.vacaid);
+
 
         cao.setOnClickListener(this);
         gato.setOnClickListener(this);
