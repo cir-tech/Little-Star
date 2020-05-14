@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.18"
         app:srcCompat="@drawable/teorica" />
 
     <ImageView
@@ -53,15 +53,16 @@
         android:layout_marginBottom="187dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.209"
         app:srcCompat="@drawable/pratica" />
 
     <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="147dp"
-        android:layout_height="87dp"
+        android:layout_width="191dp"
+        android:layout_height="111dp"
         android:layout_marginStart="111dp"
         android:layout_marginLeft="111dp"
         android:layout_marginTop="516dp"
@@ -309,9 +310,10 @@
         android:layout_marginBottom="137dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.352"
         app:srcCompat="@drawable/estrela1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

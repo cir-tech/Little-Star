@@ -8,6 +8,34 @@
     tools:context=".activities.ListaAtividadesActivity">
 
     <ImageView
+        android:id="@+id/imageView68"
+        android:layout_width="69dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641"
+        app:srcCompat="@drawable/estrela1" />
+
+    <ImageView
+        android:id="@+id/imageView71"
+        android:layout_width="69dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858"
+        app:srcCompat="@drawable/estrela1" />
+
+    <ImageView
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,14 +90,183 @@
 
     <ImageView
         android:id="@+id/imageView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="28dp"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginLeft="312dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="568dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toEndOf="@+id/imageView24"
-        app:srcCompat="@drawable/opcoes" />
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/estrela3" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:layout_marginBottom="553dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/estrela3" />
+
+    <ImageView
+        android:id="@+id/imageView59"
+        android:layout_width="81dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginRight="315dp"
+        android:layout_marginBottom="573dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/estrela2" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginRight="201dp"
+        android:layout_marginBottom="468dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228"
+        app:srcCompat="@drawable/estrela2" />
+
+    <ImageView
+        android:id="@+id/imageView63"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        android:layout_marginBottom="485dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        app:srcCompat="@drawable/estrela3" />
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginRight="113dp"
+        android:layout_marginBottom="465dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/estrela3" />
+
+    <ImageView
+        android:id="@+id/imageView65"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="299dp"
+        android:layout_marginLeft="299dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="468dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352"
+        app:srcCompat="@drawable/estrela2" />
+
+    <ImageView
+        android:id="@+id/imageView66"
+        android:layout_width="64dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginRight="277dp"
+        android:layout_marginBottom="375dp"
+        app:layout_constraintBottom_toBottomOf="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estrela4" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="84dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="269dp"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="335dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614"
+        app:srcCompat="@drawable/estrela1" />
+
+    <ImageView
+        android:id="@+id/imageView69"
+        android:layout_width="92dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+        app:srcCompat="@drawable/estrela4" />
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="92dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852"
+        app:srcCompat="@drawable/estrela4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
