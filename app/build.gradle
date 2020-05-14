@@ -18,11 +18,39 @@ android {
         }
     }
     sourceSets {
-        main.res.srcDirs = ['src/main/res/drawable/login', 'src/main/res', 'src/main/res/drawable/atividades', 'src/main/res/drawable/opcoes',
-                            'src/main/res/drawable/teorica_pratica', 'src/main/res/drawable/pratica/animais', 'src/main/res/drawable/teorica/animais',
-                            'src/main/res/drawable/pratica/cores', 'src/main/res/drawable/teorica/cores',
-                            'src/main/res/drawable/pratica/animais_cores', 'src/main/res/drawable/teorica/animais_cores', 'src/main/res/drawable/estrela3',
-                            'src/main/res/drawable/fonteCadastro']
+        main.res.srcDirs = ['src/main/res',
+                            'src/main/res/drawable/login',
+                            'src/main/res/drawable/atividades',
+                            'src/main/res/drawable/estrela3',
+                            'src/main/res/drawable/fonteCadastro',
+                            'src/main/res/drawable/opcoes',
+                            'src/main/res/drawable/teorica_pratica',
+                            'src/main/res/drawable/pratica/animais',
+                            'src/main/res/drawable/pratica/cores',
+                            'src/main/res/drawable/pratica/animais_cores2',
+                            'src/main/res/drawable/pratica/animais/elefante2',
+                            'src/main/res/drawable/pratica/animais/girafa2',
+                            'src/main/res/drawable/pratica/animais/hipopotamo2',
+                            'src/main/res/drawable/pratica/animais/leao2',
+                            'src/main/res/drawable/pratica/animais/urso2',
+                            'src/main/res/drawable/pratica/animais/zebra2',
+                            'src/main/res/drawable/pratica/cores',
+                            'src/main/res/drawable/pratica/cores/amarelo',
+                            'src/main/res/drawable/pratica/cores/azul',
+                            'src/main/res/drawable/pratica/cores/branco',
+                            'src/main/res/drawable/pratica/cores/cinza',
+                            'src/main/res/drawable/pratica/cores/laranja',
+                            'src/main/res/drawable/pratica/cores/marrom',
+                            'src/main/res/drawable/pratica/cores/preto',
+                            'src/main/res/drawable/pratica/animais_cores',
+                            'src/main/res/drawable/pratica/animais_cores/elefante2',
+                            'src/main/res/drawable/pratica/animais_cores/girafa2',
+                            'src/main/res/drawable/pratica/animais_cores/hipopotamo2',
+                            'src/main/res/drawable/pratica/animais_cores/leao2',
+                            'src/main/res/drawable/pratica/animais_cores/zebra2',
+                            'src/main/res/drawable/teorica/animais',
+                            'src/main/res/drawable/teorica/animais_cores',
+                            'src/main/res/drawable/teorica/cores']
     }
 }
 
