@@ -24,6 +24,7 @@ android {
                             'src/main/res/drawable/estrela3',
                             'src/main/res/drawable/fonteCadastro',
                             'src/main/res/drawable/opcoes',
+                            'src/main/res/drawable/teorica/animais_cores',
                             'src/main/res/drawable/teorica_pratica',
                             'src/main/res/drawable/pratica/animais',
                             'src/main/res/drawable/pratica/cores',
