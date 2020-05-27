@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.PracticeColorsActivity"></activity>
+        <activity android:name=".PracticeAnimalsColorsActivity"></activity>
+        <activity android:name=".activities.PracticeColorsActivity" />
         <activity android:name=".activities.PracticeAnimalsActivity" />
         <activity android:name=".activities.TipoActivity" />
         <activity android:name=".activities.ListaAtividadesActivity" />

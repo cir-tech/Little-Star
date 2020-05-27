@@ -49,6 +49,7 @@ android {
                             'src/main/res/drawable/pratica/animais_cores/girafa2',
                             'src/main/res/drawable/pratica/animais_cores/hipopotamo2',
                             'src/main/res/drawable/pratica/animais_cores/leao2',
+                            'src/main/res/drawable/pratica/animais_cores/urso',
                             'src/main/res/drawable/pratica/animais_cores/zebra2',
                             'src/main/res/drawable/teorica/animais',
                             'src/main/res/drawable/teorica/animais_cores',
