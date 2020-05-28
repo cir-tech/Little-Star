@@ -86,7 +86,7 @@
         app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logoCadastro" />
+        app:srcCompat="@drawable/logo_cadastro" />
 
     <ImageView
         android:id="@+id/imageView13"

@@ -5,8 +5,8 @@
     android:id="@+id/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud"
-    tools:context=".splashScreen.MainScreen" >
+    android:background="@drawable/background"
+    tools:context=".splashScreen.MainScreen">
 
     <ImageView
         android:id="@+id/imageView2"

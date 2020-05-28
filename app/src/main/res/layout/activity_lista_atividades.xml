@@ -220,8 +220,6 @@
         android:layout_marginTop="193dp"
         android:layout_marginEnd="277dp"
         android:layout_marginRight="277dp"
-        android:layout_marginBottom="375dp"
-        app:layout_constraintBottom_toBottomOf="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

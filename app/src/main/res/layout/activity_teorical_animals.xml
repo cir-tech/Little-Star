@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud"
-    tools:context=".activities.TeoricaActivity" >
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -110,8 +109,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="147"
-        android:layout_height="87"
+        android:layout_width="147dp"
+        android:layout_height="87dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="23dp"
         android:src="@drawable/logo"
