@@ -23,7 +23,7 @@
         app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/FUNDO3" />
+        app:srcCompat="@drawable/fundo3" />
 
     <ImageView
         android:id="@+id/imageView103"

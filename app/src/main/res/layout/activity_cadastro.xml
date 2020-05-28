@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fonteCadastro" />
+        app:srcCompat="@drawable/fonte_cadastro" />
 
     <EditText
         android:id="@+id/editText"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="302dp"
         android:layout_marginBottom="281dp"
-        android:background="@drawable/emailBotao"
+        android:background="@drawable/email_botao"
         android:ems="10"
         android:hint="DIgite seu Email"
         android:inputType="textEmailAddress"
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
-        android:background="@drawable/senhaBotao"
+        android:background="@drawable/senha_botao"
         android:ems="10"
         android:hint="Digite sua Senha"
         android:inputType="textPassword"
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
-        android:background="@drawable/senhaBotao"
+        android:background="@drawable/senha_botao"
         android:ems="10"
         android:hint="Confirme sua Senha"
         android:inputType="textPassword"
