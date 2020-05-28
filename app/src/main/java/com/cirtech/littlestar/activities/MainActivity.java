@@ -16,25 +16,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opcoes);
 
-        Button botaoPratica =  findViewById(R.id.idPratica);
-        Button botaoTeorica =  findViewById(R.id.idTeorico);
-
-        botaoPratica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent changePage = new Intent(MainActivity.this, ListaExericiosAtividades.class);
-                changePage.putExtra("tipoAtividade","atividadePratica");
-                startActivity(changePage);
-            }
-        });
-
-        botaoTeorica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent changePage = new Intent(MainActivity.this, ListaExericiosAtividades.class);
-                changePage.putExtra("tipoAtividade","atividadeTeorica");
-                startActivity(changePage);
-            }
-        });
+//        Button botaoPratica =  findViewById(R.id.idPratica);
+//        Button botaoTeorica =  findViewById(R.id.idTeorico);
+//
+//        botaoPratica.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent changePage = new Intent(MainActivity.this, ListaExericiosAtividades.class);
+//                changePage.putExtra("tipoAtividade","atividadePratica");
+//                startActivity(changePage);
+//            }
+//        });
+//
+//        botaoTeorica.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent changePage = new Intent(MainActivity.this, ListaExericiosAtividades.class);
+//                changePage.putExtra("tipoAtividade","atividadeTeorica");
+//                startActivity(changePage);
+//            }
+//        });
     }
 }
