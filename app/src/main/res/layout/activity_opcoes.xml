@@ -37,7 +37,7 @@
         app:srcCompat="@drawable/letra" />
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/idbtnAtividades"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="171dp"
@@ -55,7 +55,7 @@
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnAtividades"
         app:srcCompat="@drawable/jogos" />
 
     <ImageView
