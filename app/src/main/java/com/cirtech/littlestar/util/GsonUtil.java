@@ -25,17 +25,13 @@ public class GsonUtil {
         return userJSONString;
     }
 
-//    public String setJson1(){
-//
-//    }
-
     public static Map json_decode(String jsonString){
 //        String jsonString = "{\"titulo\":\"Os Arquivos JSON\",\"ano\":1998,\"genero\":\"Ficção\"}";
         Gson gson = new Gson();
         return gson.fromJson(jsonString, Map.class);
     }
-    public static void json_decode2() throws JSONException {
-        //string json
+
+    public static Map json_decode2() throws JSONException {
         String jsonString = "{\"titulo\":\"Os Arquivos JSON\",\"ano\":1998,\"genero\":\"Ficção\"}";
         JSONObject obj = new JSONObject(jsonString);
 
@@ -44,9 +40,7 @@ public class GsonUtil {
             String key = it.next();
             map.put(key,obj.getString(key));
         }
-
-
-
+        return map;
 
 //        for (Object value : map.values()) {
 //            // ...

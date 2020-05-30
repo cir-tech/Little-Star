@@ -1,8 +1,10 @@
-package com.cirtech.littlestar;
+package com.cirtech.littlestar.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.cirtech.littlestar.R;
 
 public class PracticeAnimalsColorsActivity extends AppCompatActivity {
 
