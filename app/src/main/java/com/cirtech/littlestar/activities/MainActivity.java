@@ -1,27 +1,25 @@
 package com.cirtech.littlestar.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import com.cirtech.littlestar.R;
-//import com.cirtech.littlestar.comunications.ServiceApi;
-//import com.cirtech.littlestar.models.User;
-//
-//
-//
-//import android.os.AsyncTask;
-//import android.util.Log;
-//import android.view.View;
+import com.cirtech.littlestar.comunications.ServiceApi;
+
+
+import android.util.Log;
 import android.widget.ImageView;
 
-//import java.io.IOException;
-//import java.util.List;
-//
-//import retrofit2.Call;
-//import retrofit2.Retrofit;
-//import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,12 +34,64 @@ public class MainActivity extends AppCompatActivity {
         //nova sintaxe lambda
         btnAtividades.setOnClickListener(view -> {
             Intent changePage = new Intent(MainActivity.this, ListaAtividadesActivity.class);
-            changePage.putExtra("tipoAtividade","atividadePratica");
+            changePage.putExtra("tipoAtividade", "atividadePratica");
             startActivity(changePage);
         });
 //        String jsonString = "{\"titulo\":\"Os Arquivos JSON\",\"ano\":1998,\"genero\":\"Ficção\"}";
 //        Map map = GsonUtil.json_decode(jsonString);
 //        new Peticion().execute();
+        new RetrofitTeste().execute();
+    }
+
+}
+
+     class RetrofitTeste extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... voids) {
+            final  String url = "https://androidtutorials.herokuapp.com/";
+//            Retrofit retrofit = new Retrofit.Builder()
+//                    .baseUrl(url)//Indicamos la url del servicio
+//                    .addConverterFactory(GsonConverterFactory.create())//Agregue la fábrica del convertidor para la serialización y la deserialización de objetos.
+//                    .build();
+            Retrofit retrofit = new Retrofit.Builder()
+                    .addConverterFactory(ScalarsConverterFactory.create())
+                    .baseUrl(url)
+                    .build();
+
+            ServiceApi service = retrofit.create(ServiceApi.class);
+
+            Call<String> stringCall = service.getStringResponse();
+
+//            stringCall.enqueue(new Callback<String>() {
+//                @Override
+//                public void onResponse(@NonNull Call<String> call,@NonNull Response<String> response) {
+//                    assert response.body() != null;
+//                    Log.i("teste", response.body());
+//                }
+//
+//                @Override
+//                public void onFailure(Call<String> call, Throwable t) {
+//                    Log.e("teste", t.getMessage());
+//                }
+//            });
+            stringCall.enqueue(new Callback<String>() {
+                @Override
+                public void onResponse(Call<String> call, Response<String> response) {
+                    if (response.isSuccessful()) {
+                        String responseString = response.body();
+                        Log.i("resposta_string",responseString);
+                        // todo: do something with the response string
+                    }
+
+                }
+
+                @Override
+                public void onFailure(Call<String> call, Throwable t) {
+
+                }
+            });
+            return null;
+        }
     }
 
 //    public static class Peticion extends AsyncTask<Void,Void,Void>{
@@ -75,4 +125,4 @@ public class MainActivity extends AppCompatActivity {
 //            return null;
 //        }
 //    }
-}
+
