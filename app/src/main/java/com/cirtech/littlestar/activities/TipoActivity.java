@@ -13,11 +13,13 @@ import com.cirtech.littlestar.R;
 
 public class TipoActivity extends AppCompatActivity {
 
+    private String nome;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //recebe dados de outra tela
         Bundle dados = getIntent().getExtras();
-        String nome = dados.getString("Animals");
+        nome = dados.getString("Atividade");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipo);
@@ -40,21 +42,16 @@ public class TipoActivity extends AppCompatActivity {
                 if (nome.equals("Animals")) {
                     Intent changePage = new Intent(TipoActivity.this, PracticeAnimalsActivity.class);
                     startActivity(changePage);
-
                 }
-            }
-        });
-        //Cores
-        ImageView btnTeoricaColors = findViewById(R.id.idbtnpratica);
-        btnTeoricaColors.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                //Cores
                 if (nome.equals("Colors")) {
                     Intent changePage = new Intent(TipoActivity.this, TheoricalColorsActivity.class);
                     startActivity(changePage);
                 }
+
             }
         });
+
 
 
     }}
