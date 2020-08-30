@@ -20,6 +20,6 @@ public interface ServiceApi {
     @GET("usersFake")
     Call<String> getValues();
 
-    @POST("usersFake")
+    @GET("users/1")
     Call<String> getStringResponse();
 }
