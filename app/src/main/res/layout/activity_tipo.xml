@@ -8,7 +8,7 @@
     tools:context=".activities.TipoActivity" >
 
     <ImageView
-        android:id="@+id/imageView28"
+        android:id="@+id/idbtnCadastro"
         android:layout_width="315dp"
         android:layout_height="70dp"
         android:layout_marginStart="27dp"
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/lets_practice" />
 
     <ImageView
-        android:id="@+id/imageView29"
+        android:id="@+id/idbtnteorica"
         android:layout_width="325dp"
         android:layout_height="105dp"
         android:layout_marginStart="22dp"
@@ -33,21 +33,17 @@
         android:layout_marginTop="187dp"
         android:layout_marginEnd="22dp"
         android:layout_marginRight="22dp"
-        android:layout_marginBottom="334dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
         app:srcCompat="@drawable/teorica" />
 
     <ImageView
-        android:id="@+id/imageView30"
+        android:id="@+id/idbtnpratica"
         android:layout_width="325dp"
         android:layout_height="105dp"
         android:layout_marginStart="22dp"
         android:layout_marginLeft="22dp"
-        android:layout_marginTop="334dp"
         android:layout_marginEnd="22dp"
         android:layout_marginRight="22dp"
         android:layout_marginBottom="187dp"
@@ -55,8 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnteorica"
         app:srcCompat="@drawable/pratica" />
 
     <ImageView
@@ -65,15 +60,13 @@
         android:layout_height="111dp"
         android:layout_marginStart="111dp"
         android:layout_marginLeft="111dp"
-        android:layout_marginTop="516dp"
         android:layout_marginEnd="111dp"
         android:layout_marginRight="111dp"
         android:layout_marginBottom="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17000002"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnpratica"
         app:srcCompat="@drawable/logo" />
 
     <ImageView
