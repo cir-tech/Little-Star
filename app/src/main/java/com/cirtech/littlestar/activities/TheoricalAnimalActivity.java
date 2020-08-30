@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import com.cirtech.littlestar.R;
 
-public class TeoricaActivity extends Activity implements View.OnClickListener{
+public class TheoricalAnimalActivity extends Activity implements View.OnClickListener{
 
     private ImageView urso;
     private ImageView zebra;
@@ -46,27 +46,27 @@ public class TeoricaActivity extends Activity implements View.OnClickListener{
 
         switch (v.getId()){
             case R.id.idurso:
-                mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TeoricaActivity.this,R.raw.urso);
+                mediaPlayer = MediaPlayer.create(TheoricalAnimalActivity.this,R.raw.urso);
                 tocarSom();
                 break;
             case R.id.idzebra:
-                mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TeoricaActivity.this,R.raw.zebra);
+                mediaPlayer = MediaPlayer.create(TheoricalAnimalActivity.this,R.raw.zebra);
                 tocarSom();
                 break;
             case R.id.idgirafa:
-                mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TeoricaActivity.this,R.raw.girafa);
+                mediaPlayer = MediaPlayer.create(TheoricalAnimalActivity.this,R.raw.girafa);
                 tocarSom();
                 break;
             case R.id.idelefante:
-                mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TeoricaActivity.this,R.raw.elefante);
+                mediaPlayer = MediaPlayer.create(TheoricalAnimalActivity.this,R.raw.elefante);
                 tocarSom();
                 break;
             case R.id.idhipopotamo:
-                mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TeoricaActivity.this,R.raw.hipopotamo);
+                mediaPlayer = MediaPlayer.create(TheoricalAnimalActivity.this,R.raw.hipopotamo);
                 tocarSom();
                 break;
             case R.id.idleao:
-                mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TeoricaActivity.this,R.raw.leao);
+                mediaPlayer = MediaPlayer.create(TheoricalAnimalActivity.this,R.raw.leao);
                 tocarSom();
 
                 break;
@@ -77,4 +77,5 @@ public class TeoricaActivity extends Activity implements View.OnClickListener{
             mediaPlayer.start();
         }
     }
+
 }
