@@ -14,6 +14,7 @@ import com.cirtech.littlestar.comunications.ServiceApi;
 import android.util.Log;
 import android.widget.ImageView;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //        String jsonString = "{\"titulo\":\"Os Arquivos JSON\",\"ano\":1998,\"genero\":\"Ficção\"}";
 //        Map map = GsonUtil.json_decode(jsonString);
 //        new Peticion().execute();
+
         new RetrofitTeste().execute();
     }
 
@@ -48,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
      class RetrofitTeste extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... voids) {
-            final  String url = "https://androidtutorials.herokuapp.com/";
+            final  String url = "https://api.github.com";
+            Log.i("testeeaaaaaaaaaaaaaaaa","bbbbbbbbbbbbbbbbbbbbbbbb");
 //            Retrofit retrofit = new Retrofit.Builder()
 //                    .baseUrl(url)//Indicamos la url del servicio
 //                    .addConverterFactory(GsonConverterFactory.create())//Agregue la fábrica del convertidor para la serialización y la deserialización de objetos.
@@ -77,17 +80,22 @@ public class MainActivity extends AppCompatActivity {
             stringCall.enqueue(new Callback<String>() {
                 @Override
                 public void onResponse(Call<String> call, Response<String> response) {
+                    response.errorBody();
                     if (response.isSuccessful()) {
                         String responseString = response.body();
-                        Log.i("resposta_string",responseString);
-                        // todo: do something with the response string
+                      Log.i("resposta_string",responseString);
+//                        Log.i("resposta_string","deu certo");
+                    }
+                    else {
+                        Log.i("resposta_string","nao deu certo");
                     }
 
                 }
 
                 @Override
                 public void onFailure(Call<String> call, Throwable t) {
-
+                    String responseString = t.toString();
+                    Log.i("resposta_string","deu ruiiiim!!!!");
                 }
             });
             return null;

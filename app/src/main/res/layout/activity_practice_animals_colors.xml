@@ -94,7 +94,7 @@
         app:srcCompat="@drawable/urso" />
 
     <ImageView
-        android:id="@+id/imageView59"
+        android:id="@+id/idbtnVoiceAnimalColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

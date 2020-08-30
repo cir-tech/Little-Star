@@ -69,11 +69,12 @@
         app:srcCompat="@drawable/configuracao" />
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/idlogoLista"
         android:layout_width="147dp"
         android:layout_height="87dp"
         android:layout_marginTop="516dp"
         android:layout_marginBottom="23dp"
+        android:transitionName="example_transition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +118,7 @@
         app:srcCompat="@drawable/estrela2" />
 
     <ImageView
-        android:id="@+id/imageView42"
+        android:id="@+id/idbtnvoice"
         android:layout_width="39dp"
         android:layout_height="47dp"
         android:layout_marginStart="124dp"

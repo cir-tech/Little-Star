@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/login" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/idLogoLogin"
         android:layout_width="231dp"
         android:layout_height="136dp"
         android:layout_marginStart="76dp"
@@ -31,6 +31,7 @@
         android:layout_marginEnd="62dp"
         android:layout_marginRight="62dp"
         android:layout_marginBottom="436dp"
+        android:transitionName="example_transition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.388"
@@ -221,7 +222,7 @@
         app:srcCompat="@drawable/estrela2" />
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/idlogoLista"
         android:layout_width="31dp"
         android:layout_height="30dp"
         android:layout_marginStart="227dp"
