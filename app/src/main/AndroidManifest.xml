@@ -37,7 +37,10 @@
 <!--            android:theme="@style/AppTheme.Fullscreen">-->
 <!--        </activity>-->
        <activity android:name=".activities.TheoricalAnimalActivity"/>
-        <activity android:name=".ac   tivities.TheoricalColorsActivity"/>
+        <activity android:name=".activities.TheoricalColorsActivity"/>
+        <activity android:name=".activities.TheoricalAnimalsColorsActivity">
+
+        </activity>
 
 <!--        <activity android:name=".activities.PraticaActivity" />-->
         <activity android:name=".activities.MainActivity" />

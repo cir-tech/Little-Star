@@ -15,7 +15,7 @@ public class TipoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //recebe dados de outra tela
         Bundle dados = getIntent().getExtras();
-        String nome = dados.getString("Atividades");
+        String nome = dados.getString("Atividade");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipo);
@@ -33,7 +33,7 @@ public class TipoActivity extends AppCompatActivity {
                     startActivity(changePage);
                 }
                 if (nome.equals("AnimalsColors")) {
-                    Intent changePage = new Intent(TipoActivity.this, TheoricalColorsActivity.class);
+                    Intent changePage = new Intent(TipoActivity.this, TheoricalAnimalsColorsActivity.class);
                     startActivity(changePage);
             }}
         });
