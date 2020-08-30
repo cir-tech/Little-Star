@@ -20,19 +20,31 @@ public class LoginActivity extends AppCompatActivity {
 //    private static final String PREFERENCE = "preferencesAppInfo";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_login);
 
-        ImageView btnLogar = findViewById(R.id.idbtnLogar);
+            ImageView btnLogar = findViewById(R.id.idbtnLogar);
 
-        btnLogar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent changePage = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(changePage);
-            }
-        });
+            btnLogar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent changePage = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(changePage);
+
+                    ;
+                }
+            } );
+
+//        //btnCadastro.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent changePage = new Intent(LoginActivity.this, MainActivity.class);
+//                startActivity(changePage);
+
+
+        //    }
+       // });
 //        Button botaoLogar = findViewById(R.id.idBotaoLogar);
 //        botaoLogar.setOnClickListener(new View.OnClickListener() {
 //            @Override

@@ -80,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/idzebra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -157,7 +157,7 @@
         app:srcCompat="@drawable/estrela3" />
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/idbtnAnimals"
         android:layout_width="31dp"
         android:layout_height="30dp"
         android:layout_marginStart="60dp"
@@ -173,7 +173,7 @@
         app:srcCompat="@drawable/estrela2" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/idbtnColors"
         android:layout_width="37dp"
         android:layout_height="35dp"
         android:layout_marginStart="269dp"
@@ -237,7 +237,7 @@
         app:srcCompat="@drawable/estrela2" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/idbtnAnimalsColors"
         android:layout_width="47dp"
         android:layout_height="45dp"
         android:layout_marginStart="306dp"

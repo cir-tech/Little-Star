@@ -30,7 +30,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/idurso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -41,14 +41,14 @@
         android:layout_marginBottom="284dp"
         android:src="@drawable/urso"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/idzebra"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idbtnLogar"
         app:layout_constraintVertical_bias="0.51"
         app:srcCompat="@drawable/urso2" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/idzebra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/idbtnLogar" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/idgirafa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/idbtnLogar" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/idelefante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -83,11 +83,11 @@
         android:layout_marginBottom="140dp"
         android:src="@drawable/elefante"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/idhipopotamo"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/idhipopotamo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="38dp"
@@ -95,10 +95,10 @@
         android:layout_marginBottom="140dp"
         android:src="@drawable/hipopotamo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12" />
+        app:layout_constraintEnd_toStartOf="@+id/idleao" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/idleao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -118,6 +118,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/idhipopotamo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

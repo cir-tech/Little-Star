@@ -6,6 +6,8 @@
 
     <dist:module dist:instant="true" />
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,21 +19,22 @@
 <!--        <activity android:name=".PracticeAnimalsColorsActivity"></activity>-->
 <!--        <activity android:name=".activities.PracticeColorsActivity" />-->
 <!--        <activity android:name=".activities.PracticeAnimalsActivity" />-->
-<!--        <activity android:name=".activities.TipoActivity" />-->
-        <activity android:name=".activities.ListaAtividadesActivity" />
-        <activity android:name=".activities.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".activities.TipoActivity" />
+        <activity android:name=".activities.ListaAtividadesActivity"/>
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.CadastroActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
 <!--        <activity-->
 <!--            android:name=".splashScreen.MainScreen"-->
 <!--            android:theme="@style/AppTheme.Fullscreen">-->
 <!--        </activity>-->
-<!--        <activity android:name=".activities.TeoricaActivity" />-->
+       <activity android:name=".activities.TeoricaActivity">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+       </activity>
+
 <!--        <activity android:name=".activities.PraticaActivity" />-->
         <activity android:name=".activities.MainActivity" />
     </application>
