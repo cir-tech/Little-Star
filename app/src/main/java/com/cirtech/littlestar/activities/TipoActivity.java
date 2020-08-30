@@ -15,7 +15,7 @@ public class TipoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //recebe dados de outra tela
         Bundle dados = getIntent().getExtras();
-        String nome = dados.getString("Animals");
+        String nome = dados.getString("Atividades");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipo);
@@ -28,7 +28,14 @@ public class TipoActivity extends AppCompatActivity {
                     Intent changePage = new Intent(TipoActivity.this, TheoricalAnimalActivity.class);
                     startActivity(changePage);
                 }
-            }
+                if (nome.equals("Colors")) {
+                    Intent changePage = new Intent(TipoActivity.this, TheoricalColorsActivity.class);
+                    startActivity(changePage);
+                }
+                if (nome.equals("AnimalsColors")) {
+                    Intent changePage = new Intent(TipoActivity.this, TheoricalAnimalsColors.class);
+                    startActivity(changePage);
+            }}
         });
         ImageView btnPratica = findViewById(R.id.idbtnpratica);
         btnPratica.setOnClickListener(new View.OnClickListener() {
@@ -39,19 +46,14 @@ public class TipoActivity extends AppCompatActivity {
                     startActivity(changePage);
 
                 }
-            }
-        });
-        //Cores
-        ImageView btnTeoricaColors = findViewById(R.id.idbtnpratica);
-        btnTeoricaColors.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 if (nome.equals("Colors")) {
-                    Intent changePage = new Intent(TipoActivity.this, TheoricalColorsActivity.class);
+                    Intent changePage = new Intent(TipoActivity.this, PracticeColorsActivity.class);
                     startActivity(changePage);
                 }
             }
         });
+
+
 
 
     }}
