@@ -2,6 +2,8 @@ package com.cirtech.littlestar.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -31,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_opcoes);
 
         ImageView btnAtividades = findViewById(R.id.idbtnAtividades);
+        final ImageView logo = findViewById(R.id.idlogoLista);
 
         //nova sintaxe lambda
         btnAtividades.setOnClickListener(view -> {
             Intent changePage = new Intent(MainActivity.this, ListaAtividadesActivity.class);
+            ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                    MainActivity.this, logo, ViewCompat.getTransitionName(logo));
             changePage.putExtra("tipoAtividade", "atividadePratica");
-            startActivity(changePage);
+            startActivity(changePage,options.toBundle());
         });
 //        String jsonString = "{\"titulo\":\"Os Arquivos JSON\",\"ano\":1998,\"genero\":\"Ficção\"}";
 //        Map map = GsonUtil.json_decode(jsonString);
@@ -80,10 +85,9 @@ public class MainActivity extends AppCompatActivity {
             stringCall.enqueue(new Callback<String>() {
                 @Override
                 public void onResponse(Call<String> call, Response<String> response) {
-                    response.errorBody();
                     if (response.isSuccessful()) {
                         String responseString = response.body();
-                      Log.i("resposta_string",responseString);
+                        Log.i("resposta_string",responseString);
 //                        Log.i("resposta_string","deu certo");
                     }
                     else {
