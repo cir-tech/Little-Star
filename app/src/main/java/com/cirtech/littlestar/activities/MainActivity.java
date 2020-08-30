@@ -47,61 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
-     class RetrofitTeste extends AsyncTask<Void, Void, Void> {
-        @Override
-        protected Void doInBackground(Void... voids) {
-            final  String url = "https://api.github.com";
-            Log.i("testeeaaaaaaaaaaaaaaaa","bbbbbbbbbbbbbbbbbbbbbbbb");
-//            Retrofit retrofit = new Retrofit.Builder()
-//                    .baseUrl(url)//Indicamos la url del servicio
-//                    .addConverterFactory(GsonConverterFactory.create())//Agregue la fábrica del convertidor para la serialización y la deserialización de objetos.
-//                    .build();
-            Retrofit retrofit = new Retrofit.Builder()
-                    .addConverterFactory(ScalarsConverterFactory.create())
-                    .baseUrl(url)
-                    .build();
-
-            ServiceApi service = retrofit.create(ServiceApi.class);
-
-            Call<String> stringCall = service.getStringResponse();
-
-//            stringCall.enqueue(new Callback<String>() {
-//                @Override
-//                public void onResponse(@NonNull Call<String> call,@NonNull Response<String> response) {
-//                    assert response.body() != null;
-//                    Log.i("teste", response.body());
-//                }
-//
-//                @Override
-//                public void onFailure(Call<String> call, Throwable t) {
-//                    Log.e("teste", t.getMessage());
-//                }
-//            });
-            stringCall.enqueue(new Callback<String>() {
-                @Override
-                public void onResponse(Call<String> call, Response<String> response) {
-                    response.errorBody();
-                    if (response.isSuccessful()) {
-                        String responseString = response.body();
-                      Log.i("resposta_string",responseString);
-//                        Log.i("resposta_string","deu certo");
-                    }
-                    else {
-                        Log.i("resposta_string","nao deu certo");
-                    }
-
-                }
-
-                @Override
-                public void onFailure(Call<String> call, Throwable t) {
-                    String responseString = t.toString();
-                    Log.i("resposta_string","deu ruiiiim!!!!");
-                }
-            });
-            return null;
-        }
-    }
-
 //    public static class Peticion extends AsyncTask<Void,Void,Void>{
 //
 //        @Override
