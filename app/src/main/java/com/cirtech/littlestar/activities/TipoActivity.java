@@ -1,6 +1,8 @@
 package com.cirtech.littlestar.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +19,7 @@ public class TipoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tipo);
 
         ImageView btnTeorica = findViewById(R.id.idbtnteorica);
+
         btnTeorica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

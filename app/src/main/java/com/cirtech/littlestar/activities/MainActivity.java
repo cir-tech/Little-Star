@@ -2,6 +2,8 @@ package com.cirtech.littlestar.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -31,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_opcoes);
 
         ImageView btnAtividades = findViewById(R.id.idbtnAtividades);
+        final ImageView logo = findViewById(R.id.idlogoLista);
 
         //nova sintaxe lambda
         btnAtividades.setOnClickListener(view -> {
             Intent changePage = new Intent(MainActivity.this, ListaAtividadesActivity.class);
+            ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                    MainActivity.this, logo, ViewCompat.getTransitionName(logo));
             changePage.putExtra("tipoAtividade", "atividadePratica");
-            startActivity(changePage);
+            startActivity(changePage,options.toBundle());
         });
 //        String jsonString = "{\"titulo\":\"Os Arquivos JSON\",\"ano\":1998,\"genero\":\"Ficção\"}";
 //        Map map = GsonUtil.json_decode(jsonString);
@@ -46,6 +51,60 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+     class RetrofitTeste extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... voids) {
+            final  String url = "https://api.github.com";
+            Log.i("testeeaaaaaaaaaaaaaaaa","bbbbbbbbbbbbbbbbbbbbbbbb");
+//            Retrofit retrofit = new Retrofit.Builder()
+//                    .baseUrl(url)//Indicamos la url del servicio
+//                    .addConverterFactory(GsonConverterFactory.create())//Agregue la fábrica del convertidor para la serialización y la deserialización de objetos.
+//                    .build();
+            Retrofit retrofit = new Retrofit.Builder()
+                    .addConverterFactory(ScalarsConverterFactory.create())
+                    .baseUrl(url)
+                    .build();
+
+            ServiceApi service = retrofit.create(ServiceApi.class);
+
+            Call<String> stringCall = service.getStringResponse();
+
+//            stringCall.enqueue(new Callback<String>() {
+//                @Override
+//                public void onResponse(@NonNull Call<String> call,@NonNull Response<String> response) {
+//                    assert response.body() != null;
+//                    Log.i("teste", response.body());
+//                }
+//
+//                @Override
+//                public void onFailure(Call<String> call, Throwable t) {
+//                    Log.e("teste", t.getMessage());
+//                }
+//            });
+            stringCall.enqueue(new Callback<String>() {
+                @Override
+                public void onResponse(Call<String> call, Response<String> response) {
+                    if (response.isSuccessful()) {
+                        String responseString = response.body();
+                        Log.i("resposta_string",responseString);
+//                        Log.i("resposta_string","deu certo");
+                    }
+                    else {
+                        Log.i("resposta_string","nao deu certo");
+                    }
+
+                }
+
+                @Override
+                public void onFailure(Call<String> call, Throwable t) {
+                    String responseString = t.toString();
+                    Log.i("resposta_string","deu ruiiiim!!!!");
+                }
+            });
+            return null;
+        }
+    }
 
 //    public static class Peticion extends AsyncTask<Void,Void,Void>{
 //
