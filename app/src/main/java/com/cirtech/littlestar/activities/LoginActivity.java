@@ -1,6 +1,8 @@
 package com.cirtech.littlestar.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
 
 //import android.content.SharedPreferences;
 import android.content.Intent;
@@ -25,12 +27,15 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         ImageView btnLogar = findViewById(R.id.idbtnLogar);
+        final ImageView logo = findViewById(R.id.idLogoLogin);
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent changePage = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(changePage);
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        LoginActivity.this, logo, ViewCompat.getTransitionName(logo));
+                startActivity(changePage,options.toBundle());
             }
         });
 //        Button botaoLogar = findViewById(R.id.idBotaoLogar);

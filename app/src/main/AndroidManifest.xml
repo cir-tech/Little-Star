@@ -20,16 +20,21 @@
 <!--        <activity android:name=".activities.PracticeColorsActivity" />-->
 <!--        <activity android:name=".activities.PracticeAnimalsActivity" />-->
 <!--        <activity android:name=".activities.TipoActivity" />-->
-        <activity android:name=".activities.ListaAtividadesActivity" />
+        <activity android:name=".activities.ListaAtividadesActivity"/>
+
         <activity android:name=".activities.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+
+        <activity android:name=".activities.PracticeAnimalsActivity">
 
         </activity>
-<!--        <activity-->
+        <!--        <activity-->
 <!--            android:name=".splashScreen.MainScreen"-->
 <!--            android:theme="@style/AppTheme.Fullscreen">-->
 <!--        </activity>-->

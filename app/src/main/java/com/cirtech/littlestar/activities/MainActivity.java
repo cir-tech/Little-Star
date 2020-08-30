@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                     if (response.isSuccessful()) {
                         String responseString = response.body();
                         Log.i("resposta_string",responseString);
-                        // todo: do something with the response string
                     }
 
                 }
