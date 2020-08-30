@@ -33,7 +33,7 @@ public class TipoActivity extends AppCompatActivity {
                     startActivity(changePage);
                 }
                 if (nome.equals("AnimalsColors")) {
-                    Intent changePage = new Intent(TipoActivity.this, TheoricalAnimalsColors.class);
+                    Intent changePage = new Intent(TipoActivity.this, TheoricalColorsActivity.class);
                     startActivity(changePage);
             }}
         });
