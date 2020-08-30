@@ -50,10 +50,15 @@ public class TipoActivity extends AppCompatActivity {
                     Intent changePage = new Intent(TipoActivity.this, PracticeColorsActivity.class);
                     startActivity(changePage);
                 }
+                if (nome.equals("AnimalsColors")) {
+                    Intent changePage = new Intent(TipoActivity.this, PracticeAnimalsColorsActivity.class);
+                    startActivity(changePage);
+                }
             }
         });
 
 
 
 
-    }}
+    }
+}
