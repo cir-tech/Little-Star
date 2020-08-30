@@ -23,6 +23,7 @@ public class ListaAtividadesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent changePage = new Intent(ListaAtividadesActivity.this, TipoActivity.class);
+                changePage.putExtra("Atividade", "Animals");
                 startActivity(changePage);
             }
         });
@@ -31,6 +32,7 @@ public class ListaAtividadesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent changePage = new Intent(ListaAtividadesActivity.this, TipoActivity.class);
+                changePage.putExtra("Atividade", "Colors");
                 startActivity(changePage);
             }
         });
@@ -39,6 +41,7 @@ public class ListaAtividadesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent changePage = new Intent(ListaAtividadesActivity.this, TipoActivity.class);
+                changePage.putExtra("Atividade", "AnimalsColors");
                 startActivity(changePage);
             }
         });

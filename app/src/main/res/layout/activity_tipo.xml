@@ -49,9 +49,10 @@
         android:layout_marginBottom="187dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idbtnteorica"
+        app:layout_constraintVertical_bias="0.489"
         app:srcCompat="@drawable/pratica" />
 
     <ImageView
