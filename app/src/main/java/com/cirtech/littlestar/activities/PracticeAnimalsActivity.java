@@ -23,7 +23,7 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_practice_animals);
 
 
-        ImageView btnVoice = findViewById(R.id.idbtnvoice);
+        ImageView btnVoice = findViewById(R.id.idbtnVoice);
 
         btnVoice.setOnClickListener(this::getSpeechInput);
 
@@ -40,7 +40,7 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, 10);
         } else {
-            Toast.makeText(this, "Your Device Don't Support Speech Input", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Seu Dispositivo Não Suporta Este Serviço! ", Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -60,7 +60,7 @@
         tools:layout_editor_absoluteY="59dp" />
 
     <ImageView
-        android:id="@+id/imageView108"
+        android:id="@+id/idMarrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -78,7 +78,7 @@
         app:srcCompat="@drawable/marrom" />
 
     <ImageView
-        android:id="@+id/imageView109"
+        android:id="@+id/idPreto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
@@ -95,7 +95,7 @@
         app:srcCompat="@drawable/preto" />
 
     <ImageView
-        android:id="@+id/imageView110"
+        android:id="@+id/idBranco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="231dp"
@@ -113,7 +113,7 @@
         app:srcCompat="@drawable/branco" />
 
     <ImageView
-        android:id="@+id/imageView111"
+        android:id="@+id/idAmarelo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -158,10 +158,10 @@
         android:layout_marginBottom="69dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.505"
         app:srcCompat="@drawable/laranja" />
 
     <ImageView
@@ -178,5 +178,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.995"
         app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/azul"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="387dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

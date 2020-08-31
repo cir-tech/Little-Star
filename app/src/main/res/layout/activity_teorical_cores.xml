@@ -87,7 +87,7 @@
         app:srcCompat="@drawable/lets_colors" />
 
     <ImageView
-        android:id="@+id/imageView83"
+        android:id="@+id/idMarrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -103,7 +103,7 @@
         app:srcCompat="@drawable/marrom" />
 
     <ImageView
-        android:id="@+id/imageView84"
+        android:id="@+id/idPreto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
@@ -121,7 +121,7 @@
         app:srcCompat="@drawable/preto" />
 
     <ImageView
-        android:id="@+id/imageView85"
+        android:id="@+id/idBranco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="231dp"
@@ -139,7 +139,7 @@
         app:srcCompat="@drawable/branco" />
 
     <ImageView
-        android:id="@+id/imageView86"
+        android:id="@+id/idAmarelo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -157,7 +157,7 @@
         app:srcCompat="@drawable/amarelo" />
 
     <ImageView
-        android:id="@+id/imageView87"
+        android:id="@+id/idAzul"
         android:layout_width="126dp"
         android:layout_height="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -169,7 +169,7 @@
         app:srcCompat="@drawable/azul" />
 
     <ImageView
-        android:id="@+id/imageView88"
+        android:id="@+id/idCinza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -181,7 +181,7 @@
         app:srcCompat="@drawable/cinza" />
 
     <ImageView
-        android:id="@+id/imageView89"
+        android:id="@+id/idLaranja"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

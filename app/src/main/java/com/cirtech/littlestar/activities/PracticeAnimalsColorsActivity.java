@@ -40,7 +40,7 @@ public class PracticeAnimalsColorsActivity extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, 10);
         } else {
-            Toast.makeText(this, "Your Device Don't Support Speech Input", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Seu Dispositivo Não Suporta Esse Serviço!", Toast.LENGTH_SHORT).show();
         }
 
     }
