@@ -9,7 +9,7 @@
     tools:context=".splashScreen.MainScreen">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/idmainsplash"
         android:layout_width="406dp"
         android:layout_height="668dp"
         android:layout_marginTop="16dp"

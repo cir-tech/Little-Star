@@ -19,6 +19,15 @@
 <!--        <activity android:name=".PracticeAnimalsColorsActivity"></activity>-->
 <!--        <activity android:name=".activities.PracticeColorsActivity" />-->
 <!--        <activity android:name=".activities.PracticeAnimalsActivity" />-->
+        <activity
+            android:name=".splashScreen.MainScreen"
+            android:theme="@style/AppTheme.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.TipoActivity">
 
         </activity>
@@ -33,10 +42,6 @@
        <activity android:name=".activities.TheoricalAnimalActivity"/>
         <activity android:name=".activities.TheoricalColorsActivity"/>
         <activity android:name=".activities.TheoricalAnimalsColorsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
 
