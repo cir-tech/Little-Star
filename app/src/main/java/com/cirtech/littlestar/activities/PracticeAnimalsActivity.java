@@ -17,12 +17,21 @@ import java.util.Locale;
 
 public class PracticeAnimalsActivity extends AppCompatActivity {
 
+    private int currentAnimal = 0;
+    private String[] animals = {"bear", "zebra", "giraffa"};
+    private Integer[] imgResource = {R.drawable.urso,R.drawable.zebra,R.drawable.girafa};
+    private Integer[] phraseResource = {R.drawable.mel,R.drawable.mel,R.drawable.mel};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice_animals);
 
+        //recuperando dados enviados pela intent
+        String current = this.getAnimal();
+        this.updateView();
 
+        Toast.makeText(this, current, Toast.LENGTH_SHORT).show();
         ImageView btnVoice = findViewById(R.id.idbtnVoice);
 
         btnVoice.setOnClickListener(this::getSpeechInput);
@@ -57,6 +66,12 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
 
                 if( result.get(0).equals("dog")){
                     Toast.makeText(this, "Parabéns, você acertouu!!", Toast.LENGTH_SHORT).show();
+                    Intent refresh = getIntent();
+                    finish();
+                    this.currentAnimal++;
+                    refresh.putExtra("currentAnimal", this.currentAnimal);
+                    startActivity(refresh);
+
                 }
             }
 
@@ -64,6 +79,34 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
             throw new IllegalStateException("Unexpected value: " + requestCode);
         }
     }
+
+
+    private String getAnimal(){
+        Intent intent = getIntent();
+        if(intent.hasExtra("currentAnimal")) {
+          this.currentAnimal =  intent.getExtras().getInt("currentAnimal");
+        }
+        return this.animals[this.currentAnimal];
+        //        Bundle extras = getIntent().getExtras();
+        //        if (extras != null) {
+        //            boolean isNew = extras.getBoolean("isNewItem", false);
+        //            if (isNew) {
+        //                // Do something
+        //            } else {
+        //                // Do something else
+        //            }
+        //        }
+        ////////////////////////////////
+        //        boolean isNew = getIntent().getBooleanExtra("isNewItem", false);
+        /////////////////////////////////////////////////////////
+    }
+
+    private void updateView(){
+        ImageView animal = findViewById(R.id.idAnimal);
+//        String teste = ;
+        animal.setBackgroundResource(this.imgResource[this.currentAnimal]);
+    }
+
 }
 
 
