@@ -67,7 +67,7 @@
         app:srcCompat="@drawable/fundo5" />
 
     <ImageView
-        android:id="@+id/idUrso"
+        android:id="@+id/idAnimal"
         android:layout_width="88dp"
         android:layout_height="131dp"
         android:layout_marginStart="22dp"
