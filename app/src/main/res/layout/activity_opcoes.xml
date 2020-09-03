@@ -100,7 +100,7 @@
         app:srcCompat="@drawable/estrela3" />
 
     <ImageView
-        android:id="@+id/idUrso"
+        android:id="@+id/idurso"
         android:layout_width="39dp"
         android:layout_height="42dp"
         android:layout_marginStart="215dp"

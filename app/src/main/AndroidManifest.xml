@@ -40,9 +40,18 @@
 <!--            android:theme="@style/AppTheme.Fullscreen">-->
 <!--        </activity>-->
        <activity android:name=".activities.TheoricalAnimalActivity"/>
-        <activity android:name=".activities.TheoricalColorsActivity"/>
-        <activity android:name=".activities.TheoricalAnimalsColorsActivity">
+
+        <activity android:name=".activities.TheoricalColorsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
+        <activity android:name=".activities.TheoricalAnimalsColorsActivity"/>
+
+
+
 
 
         <activity android:name=".activities.PracticeAnimalsActivity"/>

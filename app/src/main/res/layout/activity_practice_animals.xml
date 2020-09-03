@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/folha" />
 
     <ImageView
-        android:id="@+id/idUrso"
+        android:id="@+id/idurso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="211dp"
@@ -52,7 +52,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idUrso"
+        app:layout_constraintTop_toBottomOf="@+id/idurso"
         app:layout_constraintVertical_bias="0.473"
         app:srcCompat="@drawable/mic" />
 

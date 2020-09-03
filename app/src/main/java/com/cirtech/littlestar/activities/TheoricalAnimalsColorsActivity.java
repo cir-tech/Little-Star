@@ -5,9 +5,11 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import androidx.appcompat.app.AppCompatActivity;
 import com.cirtech.littlestar.R;
 
-public class TheoricalAnimalsColorsActivity extends Activity implements View.OnClickListener{
+
+public class TheoricalAnimalsColorsActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ImageView urso;
     private ImageView zebra;

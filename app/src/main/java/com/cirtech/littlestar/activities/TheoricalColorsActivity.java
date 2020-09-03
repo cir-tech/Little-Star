@@ -12,7 +12,7 @@ import com.cirtech.littlestar.R;
 
 
 
-         public class  TheoricalColorsActivity extends Activity implements View.OnClickListener{
+public class TheoricalColorsActivity extends AppCompatActivity implements View.OnClickListener{
 
             private ImageView marrom;
             private ImageView preto;
@@ -34,7 +34,7 @@ import com.cirtech.littlestar.R;
                 amarelo = (ImageView) findViewById(R.id.idAmarelo);
                 azul = (ImageView) findViewById(R.id.idAzul);
                 cinza = (ImageView) findViewById(R.id.idCinza);
-                laranja = (ImageView) findViewById(R.id.idLaranja);
+
 
                 marrom.setOnClickListener(this);
                 preto.setOnClickListener(this);
@@ -42,7 +42,7 @@ import com.cirtech.littlestar.R;
                 amarelo.setOnClickListener(this);
                 azul.setOnClickListener(this);
                 cinza.setOnClickListener(this);
-                laranja.setOnClickListener(this);
+
 
 
 

@@ -67,9 +67,9 @@
         app:srcCompat="@drawable/fundo5" />
 
     <ImageView
-        android:id="@+id/idUrso"
-        android:layout_width="88dp"
-        android:layout_height="131dp"
+        android:id="@+id/idurso"
+        android:layout_width="86dp"
+        android:layout_height="125dp"
         android:layout_marginStart="22dp"
         android:layout_marginLeft="22dp"
         android:layout_marginTop="246dp"
@@ -97,7 +97,7 @@
         app:srcCompat="@drawable/cores_animais" />
 
     <ImageView
-        android:id="@+id/idZebra"
+        android:id="@+id/idzebra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
@@ -114,7 +114,7 @@
         app:srcCompat="@drawable/zebra" />
 
     <ImageView
-        android:id="@+id/idGirafa"
+        android:id="@+id/idgirafa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="268dp"
@@ -131,7 +131,7 @@
         app:srcCompat="@drawable/girafa" />
 
     <ImageView
-        android:id="@+id/idElefante"
+        android:id="@+id/idelefante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
@@ -149,7 +149,7 @@
         app:srcCompat="@drawable/elefante" />
 
     <ImageView
-        android:id="@+id/idHipopotamo"
+        android:id="@+id/idhipopotamo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="139dp"
@@ -167,7 +167,7 @@
         app:srcCompat="@drawable/hipopotamo" />
 
     <ImageView
-        android:id="@+id/idLeao"
+        android:id="@+id/idleao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="268dp"
