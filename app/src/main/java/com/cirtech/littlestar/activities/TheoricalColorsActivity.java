@@ -34,6 +34,7 @@ public class TheoricalColorsActivity extends AppCompatActivity implements View.O
                 amarelo = (ImageView) findViewById(R.id.idAmarelo);
                 azul = (ImageView) findViewById(R.id.idAzul);
                 cinza = (ImageView) findViewById(R.id.idCinza);
+                laranja = (ImageView) findViewById(R.id.idLaranja);
 
 
                 marrom.setOnClickListener(this);
@@ -42,6 +43,7 @@ public class TheoricalColorsActivity extends AppCompatActivity implements View.O
                 amarelo.setOnClickListener(this);
                 azul.setOnClickListener(this);
                 cinza.setOnClickListener(this);
+                laranja.setOnClickListener(this);
 
 
 
@@ -53,27 +55,31 @@ public class TheoricalColorsActivity extends AppCompatActivity implements View.O
 
                 switch (v.getId()){
                     case R.id.idMarrom:
-                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.leao);
+                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.marrom);
                         tocarSom();
                         break;
                     case R.id.idPreto:
-                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.zebra);
+                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.preto);
                         tocarSom();
                         break;
                     case R.id.idBranco:
-                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.elefante);
+                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.branco);
                         tocarSom();
                         break;
                     case R.id.idAmarelo:
-                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.hipopotamo);
+                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.amarelo);
                         tocarSom();
                         break;
                     case R.id.idAzul:
-                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.girafa);
+                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.azul);
                         tocarSom();
                         break;
                     case R.id.idCinza:
-                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.urso);
+                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.cinza);
+                        tocarSom();
+                        break;
+                    case R.id.idLaranja:
+                        mediaPlayer = MediaPlayer.create(com.cirtech.littlestar.activities.TheoricalColorsActivity.this,R.raw.laranja);
                         tocarSom();
                         break;
 

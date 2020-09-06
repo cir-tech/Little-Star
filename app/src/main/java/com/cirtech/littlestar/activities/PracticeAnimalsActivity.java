@@ -29,7 +29,7 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
 
         //recuperando dados enviados pela intent
         String current = this.getAnimal();
-        this.updateView();
+        //this.updateView();
 
         Toast.makeText(this, current, Toast.LENGTH_SHORT).show();
         ImageView btnVoice = findViewById(R.id.idbtnVoice);
@@ -102,7 +102,7 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
     }
 
     private void updateView(){
-        ImageView animal = findViewById(R.id.idAnimal);
+        ImageView animal = findViewById(R.id.idurso);
 //        String teste = ;
         animal.setBackgroundResource(this.imgResource[this.currentAnimal]);
     }

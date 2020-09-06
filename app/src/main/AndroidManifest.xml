@@ -33,19 +33,25 @@
         </activity>
         <activity android:name=".activities.ListaAtividadesActivity"/>
         <activity android:name=".activities.LoginActivity"/>
-        <activity android:name=".activities.CadastroActivity"/>
+        <activity android:name=".activities.CadastroActivity">
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_main"
+        </activity>
 
 <!--        <activity-->
 <!--            android:name=".splashScreen.MainScreen"-->
 <!--            android:theme="@style/AppTheme.Fullscreen">-->
 <!--        </activity>-->
-       <activity android:name=".activities.TheoricalAnimalActivity"/>
+       <activity android:name=".activities.TheoricalAnimalActivity">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+       </activity>
 
         <activity android:name=".activities.TheoricalColorsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <activity android:name=".activities.TheoricalAnimalsColorsActivity"/>
