@@ -1,16 +1,23 @@
 package com.cirtech.littlestar.activities;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 import com.cirtech.littlestar.R;
 
@@ -18,31 +25,56 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Congratulations extends AppCompatActivity {
-    private View main;
-    private ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_congratulations);
-        main =  findViewById(R.id.idmainsplash);
-        imageView = (ImageView) findViewById(R.id.imageView);
-        Button idbutton = findViewById(R.id.idbutton);
-        idbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Bitmap b = Screenshot.takescreenshotOfRootView(imageView);
-                imageView.setImageBitmap(b);
 
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
+        }
+
+        public void ScreenshotButton(View view){
+        View view1 = getWindow().getDecorView().getRootView();
+        view1.setDrawingCacheEnabled(true);
+        Bitmap bitmap =  Bitmap.createBitmap(view1.getDrawingCache());
+        view1.setDrawingCacheEnabled(false);
+
+        String filePath = Environment.getExternalStorageDirectory()+ "/Download/"+ Calendar.getInstance().getTime().toString()+".png";
+        File fileScreenshot = new File(filePath);
+
+        FileOutputStream fileOutputStream = null;
+
+            try {
+                fileOutputStream = new FileOutputStream(fileScreenshot);
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, fileOutputStream);
+                fileOutputStream.flush();
+                fileOutputStream.close();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
-            });
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            Uri uri = Uri.fromFile(fileScreenshot);
+            intent.setDataAndType(uri,"image/png");
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            this.startActivity(intent);
+
         }
 
 
-}
+
+
+
+
+        }
+
 
 
 
