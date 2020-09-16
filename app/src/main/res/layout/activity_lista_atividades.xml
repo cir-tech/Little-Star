@@ -46,40 +46,60 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lets" />
 
-    <ImageView
-        android:id="@+id/idbtnAnimals"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/imageView24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15"
-        app:layout_constraintVertical_bias="0.094"
-        app:srcCompat="@drawable/animais" />
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15">
 
-    <ImageView
-        android:id="@+id/idbtnColors"
-        android:layout_width="162dp"
-        android:layout_height="139dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idbtnAnimals"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/cores" />
 
-    <ImageView
-        android:id="@+id/idbtnAnimalsColors"
-        android:layout_width="161dp"
-        android:layout_height="137dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idbtnColors"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/animais_cores" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <ImageView
+                android:id="@+id/idbtnAnimals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/imageView24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                app:layout_constraintVertical_bias="0.094"
+                app:srcCompat="@drawable/animais" />
+
+            <ImageView
+                android:id="@+id/idbtnColors"
+                android:layout_width="162dp"
+                android:layout_height="139dp"
+                android:alpha="0.5"
+                app:layout_constraintBottom_toTopOf="@+id/imageView24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idbtnAnimals"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/cores" />
+
+            <ImageView
+                android:id="@+id/idbtnAnimalsColors"
+                android:layout_width="161dp"
+                android:layout_height="137dp"
+                android:alpha="0.5"
+                app:layout_constraintBottom_toTopOf="@+id/imageView24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idbtnColors"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/animais_cores" />
+
+
+        </TableLayout>
+
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imageView24"

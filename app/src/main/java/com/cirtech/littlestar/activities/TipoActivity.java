@@ -38,6 +38,7 @@ public class TipoActivity extends AppCompatActivity {
             }}
         });
         ImageView btnPratica = findViewById(R.id.idbtnpratica);
+
         btnPratica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
