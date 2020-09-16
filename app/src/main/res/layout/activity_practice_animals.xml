@@ -8,19 +8,6 @@
     tools:context=".activities.PracticeAnimalsActivity">
 
     <ImageView
-        android:id="@+id/idfraseanimal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
-        android:layout_marginBottom="442dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView35"
-        app:layout_constraintVertical_bias="0.38"
-        />
-
-    <ImageView
         android:id="@+id/imageView35"
         android:layout_width="0dp"
         android:layout_height="235dp"
@@ -30,6 +17,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/folha" />
+
+    <ImageView
+        android:id="@+id/idfraseanimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="442dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView35"
+        app:layout_constraintVertical_bias="0.38" />
 
     <ImageView
         android:id="@+id/idanimal"
