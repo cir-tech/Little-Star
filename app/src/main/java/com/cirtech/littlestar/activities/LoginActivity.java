@@ -6,6 +6,7 @@ import androidx.core.view.ViewCompat;
 
 //import android.content.SharedPreferences;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                 Intent changePage = new Intent(LoginActivity.this, MainActivity.class);
                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                         LoginActivity.this, logo, ViewCompat.getTransitionName(logo));
-                startActivity(changePage,options.toBundle());
+                startActivity(changePage, options.toBundle());
             }
         });
 //        Button botaoLogar = findViewById(R.id.idBotaoLogar);
@@ -48,7 +49,8 @@ public class LoginActivity extends AppCompatActivity {
 //        //verifica se ja logou
 //        verificaIfLogou();
     }
-}
+
+
 //
 //    private void logarApp(){
 //        EditText login = findViewById(R.id.idLogin);
@@ -100,3 +102,19 @@ public class LoginActivity extends AppCompatActivity {
 //        }
 //    }
 //}
+
+    public void openBrowser(View view){
+
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data Uri
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+}
