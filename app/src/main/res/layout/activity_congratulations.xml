@@ -15,17 +15,18 @@
         android:onClick="ScreenshotButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintVertical_bias="0.94" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="245dp"
-        android:layout_height="209dp"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="308dp"
+        android:layout_height="403dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@color/design_default_color_surface"
-        tools:layout_editor_absoluteY="42dp" />
+        tools:layout_editor_absoluteY="142dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
