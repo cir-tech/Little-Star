@@ -129,7 +129,7 @@
         app:srcCompat="@drawable/estrela3" />
 
     <ImageView
-        android:id="@+id/idbtnVoiceAnimalColor"
+        android:id="@+id/idbtnVoiceColor"
         android:layout_width="81dp"
         android:layout_height="41dp"
         android:layout_marginStart="23dp"

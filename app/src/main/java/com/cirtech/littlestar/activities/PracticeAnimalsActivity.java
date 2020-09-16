@@ -3,6 +3,7 @@ package com.cirtech.littlestar.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
@@ -18,9 +19,9 @@ import java.util.Locale;
 public class PracticeAnimalsActivity extends AppCompatActivity {
 
     private int currentAnimal = 0;
-    private String[] animals = {"bear", "zebra", "giraffa"};
-    private Integer[] imgResource = {R.drawable.urso,R.drawable.zebra,R.drawable.girafa};
-    private Integer[] phraseResource = {R.drawable.mel,R.drawable.mel,R.drawable.mel};
+    private String[] animals = {"bear", "zebra", "giraffe","elephant","hippopotamus","lion"};
+    private Integer[] imgResource = {R.drawable.urso,R.drawable.zebra,R.drawable.girafa,R.drawable.elefante,R.drawable.hipopotamo,R.drawable.leao};
+    private Integer[] phraseResource = {R.drawable.mel,R.drawable.frase_zebra,R.drawable.frase_girafa,R.drawable.frase_elefante,R.drawable.frase_hipo,R.drawable.frase_leao};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
 
         //recuperando dados enviados pela intent
         String current = this.getAnimal();
-        //this.updateView();
+        this.updateView();
 
         Toast.makeText(this, current, Toast.LENGTH_SHORT).show();
         ImageView btnVoice = findViewById(R.id.idbtnVoice);
@@ -40,11 +41,11 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
 
     public void getSpeechInput(View view) {
 
-        String texto ="ola";
-        Toast.makeText(getApplicationContext(), texto, Toast.LENGTH_SHORT).show();
+//        String texto ="ola";
+//        Toast.makeText(getApplicationContext(), texto, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "en-US");
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, 10);
@@ -64,15 +65,24 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
                 Log.d("myTag","foi");
                 Log.i("t","teste");
 
-                if( result.get(0).equals("dog")){
+                if( result.get(0).toLowerCase().equals(this.animals[this.currentAnimal])){
                     Toast.makeText(this, "Parabéns, você acertouu!!", Toast.LENGTH_SHORT).show();
-                    Intent refresh = getIntent();
-                    finish();
-                    this.currentAnimal++;
-                    refresh.putExtra("currentAnimal", this.currentAnimal);
-                    startActivity(refresh);
 
-                }
+                    this.currentAnimal++;
+                    if(this.currentAnimal <= this.animals.length){
+                        Intent refresh = getIntent();
+                        finish();
+
+                        refresh.putExtra("currentAnimal", this.currentAnimal);
+                        startActivity(refresh);
+                    }
+
+                    else Toast.makeText(this, "Parabéeens!, você terminou a sessão", Toast.LENGTH_LONG).show();
+
+
+                }else Toast.makeText(this, "Errou feio, errou rude!", Toast.LENGTH_LONG).show();
+
+
             }
 
         } else {
@@ -84,26 +94,15 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
     private String getAnimal(){
         Intent intent = getIntent();
         if(intent.hasExtra("currentAnimal")) {
-          this.currentAnimal =  intent.getExtras().getInt("currentAnimal");
+            if(intent.getExtras() != null)  this.currentAnimal =  intent.getExtras().getInt("currentAnimal");
         }
         return this.animals[this.currentAnimal];
-        //        Bundle extras = getIntent().getExtras();
-        //        if (extras != null) {
-        //            boolean isNew = extras.getBoolean("isNewItem", false);
-        //            if (isNew) {
-        //                // Do something
-        //            } else {
-        //                // Do something else
-        //            }
-        //        }
-        ////////////////////////////////
-        //        boolean isNew = getIntent().getBooleanExtra("isNewItem", false);
-        /////////////////////////////////////////////////////////
     }
 
     private void updateView(){
-        ImageView animal = findViewById(R.id.idurso);
-//        String teste = ;
+        ImageView frase = findViewById(R.id.idfraseanimal);
+        ImageView animal = findViewById(R.id.idanimal);
+        frase.setBackgroundResource(this.phraseResource[this.currentAnimal]);
         animal.setBackgroundResource(this.imgResource[this.currentAnimal]);
     }
 

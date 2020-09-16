@@ -70,7 +70,7 @@
         app:srcCompat="@drawable/fundo5" />
 
     <ImageView
-        android:id="@+id/imageView54"
+        android:id="@+id/idfraseCor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
@@ -83,24 +83,14 @@
         app:srcCompat="@drawable/fundo3" />
 
     <ImageView
-        android:id="@+id/imageView58"
+        android:id="@+id/idcolor"
         android:layout_width="207dp"
         android:layout_height="214dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        app:srcCompat="@drawable/marrom" />
-
-    <ImageView
-        android:id="@+id/idbtnVoiceAnimalColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/mic"
-        tools:layout_editor_absoluteY="496dp" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <ImageView
         android:id="@+id/imageView60"
@@ -119,6 +109,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/idbtnVoiceColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idcolor"
+        app:srcCompat="@drawable/mic" />
 
     <ImageView
         android:id="@+id/imageView7"
