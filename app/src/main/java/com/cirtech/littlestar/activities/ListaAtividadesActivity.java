@@ -19,6 +19,12 @@ public class ListaAtividadesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_atividades);
 
         ImageView btnAnimals = findViewById(R.id.idbtnAnimals);
+        ImageView btnColors = findViewById(R.id.idbtnColors);
+        ImageView btnAnimalsColors = findViewById(R.id.idbtnAnimalsColors);
+
+        btnColors.setEnabled(false);
+        btnAnimalsColors.setEnabled(false);
+
         btnAnimals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,7 +33,7 @@ public class ListaAtividadesActivity extends AppCompatActivity {
                 startActivity(changePage);
             }
         });
-        ImageView btnColors = findViewById(R.id.idbtnColors);
+
         btnColors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +42,7 @@ public class ListaAtividadesActivity extends AppCompatActivity {
                 startActivity(changePage);
             }
         });
-        ImageView btnAnimalsColors = findViewById(R.id.idbtnAnimalsColors);
+
         btnAnimalsColors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

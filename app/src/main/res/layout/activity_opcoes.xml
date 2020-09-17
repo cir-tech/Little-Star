@@ -8,7 +8,7 @@
     tools:context=".activities.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView58"
+        android:id="@+id/idcolorAnimal"
         android:layout_width="65dp"
         android:layout_height="77dp"
         android:layout_marginStart="12dp"
@@ -198,7 +198,7 @@
         app:srcCompat="@drawable/estrela2" />
 
     <ImageView
-        android:id="@+id/imageView54"
+        android:id="@+id/idfraseCorAnimal"
         android:layout_width="47dp"
         android:layout_height="45dp"
         android:layout_marginStart="314dp"
