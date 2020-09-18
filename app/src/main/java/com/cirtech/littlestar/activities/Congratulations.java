@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StrictMode;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -39,6 +40,7 @@ import java.util.Date;
 
 public class Congratulations extends AppCompatActivity {
     public static final int CAMERA_PERM_CODE = 101;
+    public static final int CAMERA_REQUEST_CODE = 102;
     //    android.hardware.Camera camera;
 //    FrameLayout frameLayout;
 //    ShowCamera showCamera;
@@ -83,21 +85,32 @@ public class Congratulations extends AppCompatActivity {
             openCamera();
         }
 
-        public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-                 if (requestCode == CAMERA_PERM_CODE){
-                     if (grantResults.length > 1 && grantResults[1] == PackageManager.PERMISSION_GRANTED ){
-                     // abre a camera
-                     }else{
-                         Toast.makeText(this, "Voce precisa permitir o uso da camera para continuar!", Toast.LENGTH_SHORT).show();
-                     }
-                 }
-        }
 
     }
 
-    private void openCamera() {
-        Toast.makeText(this, "solicitação de abertura de câmera", Toast.LENGTH_SHORT);
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        if (requestCode == CAMERA_PERM_CODE){
+            if (grantResults.length > 1 && grantResults[1] == PackageManager.PERMISSION_GRANTED ){
+                // abre a camera
+            }else{
+                Toast.makeText(this, "Voce precisa permitir o uso da camera para continuar!", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
 
+    private void openCamera() {
+        Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(camera, CAMERA_REQUEST_CODE);
+
+    }
+    @Override
+    protected void  onActivityResult (int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == CAMERA_REQUEST_CODE){
+            Bitmap image = (Bitmap) data.getExtras().get("data");
+            selectedImage.setImageBitmap(image);
+
+        }
     }
 
 
