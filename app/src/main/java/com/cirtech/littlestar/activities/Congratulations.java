@@ -46,19 +46,26 @@ public class Congratulations extends AppCompatActivity {
 //    ShowCamera showCamera;
     ImageView selectedImage;
     Button cameraBtn;
+    ImageView btnRetornar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_congratulations);
-//        frameLayout = (FrameLayout)findViewById(R.id.frameLayout);
 
-        //abrindo a camera
-//        camera = Camera.open(1);
-//        showCamera = new ShowCamera(this,camera);
-//        frameLayout.addView(showCamera);
+        btnRetornar = findViewById(R.id.btnRetornar);
 
-        //CAMERA
+        btnRetornar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent changePage = new Intent(Congratulations.this, ListaAtividadesActivity.class);
+                startActivity(changePage);
+            }
+        });
+
+
+
+
         selectedImage = findViewById(R.id.displayImageView);
         cameraBtn = findViewById(R.id.cameraBtn);
 
