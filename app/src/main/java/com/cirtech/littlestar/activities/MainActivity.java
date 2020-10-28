@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 //        Map map = GsonUtil.json_decode(jsonString);
 //        new Peticion().execute();
 
-        new RetrofitTeste().execute();
+//        new RetrofitTeste().execute();
     }
 
 }

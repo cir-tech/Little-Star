@@ -40,7 +40,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/idlogin"
         android:layout_width="333dp"
         android:layout_height="43dp"
         android:layout_marginStart="25dp"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/idpassword"
         android:layout_width="333dp"
         android:layout_height="43dp"
         android:layout_marginStart="25dp"

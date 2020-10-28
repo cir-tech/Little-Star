@@ -1,8 +1,11 @@
 package com.cirtech.littlestar.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
@@ -17,6 +20,9 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class PracticeAnimalsActivity extends AppCompatActivity {
+
+    private static final String PREFERENCE = "preferencesAppInfo";
+
 
     private int currentAnimal = 0;
     private String[] animals = {"bear", "zebra", "giraffe","elephant","hippopotamus","lion"};
@@ -69,7 +75,7 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
                     Toast.makeText(this, "Parabéns, você acertouu!!", Toast.LENGTH_SHORT).show();
 
                     this.currentAnimal++;
-                    if(this.currentAnimal <= this.animals.length){
+                    if(this.currentAnimal <= 1){
                         Intent refresh = getIntent();
                         finish();
 
@@ -77,7 +83,16 @@ public class PracticeAnimalsActivity extends AppCompatActivity {
                         startActivity(refresh);
                     }
 
-                    else Toast.makeText(this, "Parabéeens!, você terminou a sessão", Toast.LENGTH_LONG).show();
+                    else {
+                        Toast.makeText(this, "Parabéeens!, você terminou a sessão", Toast.LENGTH_LONG).show();
+                        Intent changePage = new Intent(getApplicationContext(), Congratulations.class);
+
+                        SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE,0); //0 é preferencia privada
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("section-animals","ok");
+                        editor.apply();   //apply()
+                        startActivity(changePage);
+                    }
 
 
                 }else Toast.makeText(this, "Errou feio, errou rude!", Toast.LENGTH_LONG).show();

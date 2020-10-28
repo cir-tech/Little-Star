@@ -3,6 +3,7 @@ package com.cirtech.littlestar.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
@@ -15,6 +16,8 @@ import com.cirtech.littlestar.R;
 import java.util.ArrayList;
 
 public class PracticeAnimalsColorsActivity extends AppCompatActivity {
+
+    private static final String PREFERENCE = "preferencesAppInfo";
 
     private int currentAnimal = 0;
     private String[] animals = {"brown", "white", "yellow","blue","gray","orange"};
@@ -76,7 +79,16 @@ public class PracticeAnimalsColorsActivity extends AppCompatActivity {
                         startActivity(refresh);
                     }
 
-                    else Toast.makeText(this, "Parabéeens!, você terminou a sessão", Toast.LENGTH_LONG).show();
+                    else {
+                        Toast.makeText(this, "Parabéeens!, você terminou a sessão", Toast.LENGTH_LONG).show();
+                        Intent changePage = new Intent(getApplicationContext(), Congratulations.class);
+
+                        SharedPreferences sharedPreferences = getSharedPreferences(PREFERENCE,0); //0 é preferencia privada
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("section-animals-colors","ok");
+                        editor.apply();   //apply()
+                        startActivity(changePage);
+                    }
 
 
                 }else Toast.makeText(this, "Errou feio, errou rude!", Toast.LENGTH_LONG).show();

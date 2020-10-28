@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TableLayout
@@ -75,7 +75,6 @@
                 android:id="@+id/idbtnColors"
                 android:layout_width="162dp"
                 android:layout_height="139dp"
-                android:alpha="0.5"
                 app:layout_constraintBottom_toTopOf="@+id/imageView24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +86,6 @@
                 android:id="@+id/idbtnAnimalsColors"
                 android:layout_width="161dp"
                 android:layout_height="137dp"
-                android:alpha="0.5"
                 app:layout_constraintBottom_toTopOf="@+id/imageView24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.504"
