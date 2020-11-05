@@ -122,6 +122,7 @@ public class LoginActivity extends AppCompatActivity implements AuthenticateUser
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                 LoginActivity.this, logo, ViewCompat.getTransitionName(logo));
         startActivity(changePage, options.toBundle());
+        finish();
     }
     private void redirecionar(){
         Intent changePage = new Intent(LoginActivity.this, MainActivity.class);

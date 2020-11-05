@@ -80,6 +80,7 @@ public class CadastroActivity extends AppCompatActivity implements RegisterUser.
         Toast.makeText(CadastroActivity.this, "Cadastro Efetuado com Sucesso", Toast.LENGTH_SHORT).show();
         Intent changePage = new Intent(CadastroActivity.this, LoginActivity.class);
         startActivity(changePage);
+        finish();
     }
 
     private void register(){
