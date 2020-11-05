@@ -5,8 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    >
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/idbtnLogar"
@@ -283,7 +282,6 @@
         android:layout_marginBottom="139dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.609"
@@ -295,9 +293,9 @@
         android:layout_height="61dp"
         android:onClick="openBrowser"
         android:tag="https://www.facebook.com/littlestarbilingualschool"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintBottom_toTopOf="@+id/idgotocadastro"
+        app:layout_constraintEnd_toStartOf="@+id/idloadlogin"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idbtnLogar"
         app:srcCompat="@drawable/redes_sociais" />
@@ -306,11 +304,16 @@
         android:id="@+id/imageView6"
         android:layout_width="67dp"
         android:layout_height="66dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
         android:onClick="openBrowser"
         android:tag="https://www.instagram.com/littlestarbilingual/"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView31"
+        app:layout_constraintBottom_toTopOf="@+id/idgotocadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/idloadlogin"
         app:layout_constraintTop_toBottomOf="@+id/idbtnLogar"
+        app:layout_constraintVertical_bias="0.55"
         app:srcCompat="@drawable/redes_sociais_2" />
 
     <ProgressBar
@@ -325,5 +328,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idbtnLogar"
         app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/idgotocadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não tem uma conta? Cadastra-se"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnLogar"
+        app:layout_constraintVertical_bias="0.84000003" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,7 @@ import android.widget.ImageView;
 
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cirtech.littlestar.R;
@@ -34,6 +35,7 @@ public class LoginActivity extends AppCompatActivity implements AuthenticateUser
     private ImageView btnLogar;
     private EditText login;
     private EditText password;
+    private TextView cadastro;
 
     private ProgressBar loadSpinner;
 
@@ -75,10 +77,12 @@ public class LoginActivity extends AppCompatActivity implements AuthenticateUser
         btnLogar = findViewById(R.id.idbtnLogar);
         login = findViewById(R.id.idlogin);
         password = findViewById(R.id.idpassword);
+        cadastro = findViewById(R.id.idgotocadastro);
         loadSpinner = findViewById(R.id.idloadlogin);
 
 
         btnLogar.setOnClickListener(view -> logarApp());
+        cadastro.setOnClickListener(view -> goToCadastro());
 
         redirecionaIfLogou();
     }
@@ -113,7 +117,12 @@ public class LoginActivity extends AppCompatActivity implements AuthenticateUser
 
     }
 
-
+    private void goToCadastro(){
+        Intent changePage = new Intent(LoginActivity.this, CadastroActivity.class);
+        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                LoginActivity.this, logo, ViewCompat.getTransitionName(logo));
+        startActivity(changePage, options.toBundle());
+    }
     private void redirecionar(){
         Intent changePage = new Intent(LoginActivity.this, MainActivity.class);
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(

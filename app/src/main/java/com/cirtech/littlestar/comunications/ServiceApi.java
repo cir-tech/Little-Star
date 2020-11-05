@@ -28,4 +28,8 @@ public interface ServiceApi {
     @FormUrlEncoded
     @POST("api/login")
     Call<String> authenticate(@Field("email") String email, @Field("password") String password);
+
+    @FormUrlEncoded
+    @POST("api/register")
+    Call<String> register(@Field("name") String name, @Field("email") String email, @Field("password") String password, @Field("password_confirmation") String password_confirmation);
 }
