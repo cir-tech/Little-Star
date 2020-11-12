@@ -31,13 +31,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.TipoActivity">
+        <activity android:name=".activities.TipoActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".activities.ListaAtividadesActivity"/>
-        <activity android:name=".activities.LoginActivity"/>
-        <activity android:name=".activities.CadastroActivity"/>
-        <activity android:name=".activities.Congratulations">
+        <activity android:name=".activities.ListaAtividadesActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.LoginActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.CadastroActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.Congratulations"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
 
         </activity>
 
@@ -45,25 +58,41 @@
 <!--            android:name=".splashScreen.MainScreen"-->
 <!--            android:theme="@style/AppTheme.Fullscreen">-->
 <!--        </activity>-->
-       <activity android:name=".activities.TheoricalAnimalActivity"/>
+       <activity android:name=".activities.TheoricalAnimalActivity"
+           android:configChanges="orientation"
+           android:screenOrientation="portrait"/>
 
-        <activity android:name=".activities.TheoricalColorsActivity">
+        <activity android:name=".activities.TheoricalColorsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
 
         </activity>
 
-        <activity android:name=".activities.TheoricalAnimalsColorsActivity"/>
+        <activity android:name=".activities.TheoricalAnimalsColorsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
 
 
 
 
 
-        <activity android:name=".activities.PracticeAnimalsActivity"/>
-        <activity android:name=".activities.PracticeColorsActivity"/>
-        <activity android:name=".activities.PracticeAnimalsColorsActivity"/>
+        <activity android:name=".activities.PracticeAnimalsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        
+        <activity android:name=".activities.PracticeColorsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.PracticeAnimalsColorsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
 
 
         <!--        <activity android:name=".activities.PraticaActivity" />-->
-        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
